@@ -1,0 +1,6 @@
+
+Bank Credit Policy 2024:
+1. Applicants with a Debt-to-Income (DTI) ratio above 40% are considered high risk.
+2. Employment history of less than 2 years requires a co-signer.
+3. Loan grades E, F, and G are only eligible for secured loans.
+4. If an applicant is a 'Renter' and has a DTI > 30%, extra scrutiny is required.
