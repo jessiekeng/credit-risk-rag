@@ -67,10 +67,18 @@ if st.button("Run Credit Audit"):
     # 5. RESULTS
     if pred == 1:
         st.error(f"### Decision: REJECTED (DTI: {dti:.2%})")
+        
         # RAG Search
         query = f"Reason for rejection with DTI {dti:.2f} and income {income}"
         docs = vectorstore.similarity_search(query, k=1)
-        st.warning(f"**Policy Explanation:** {docs[0].page_content}")
+        
+        # --- ADD THIS SAFETY CHECK ---
+        if docs:
+            st.warning(f"**Policy Explanation:** {docs[0].page_content}")
+        else:
+            st.warning("**Policy Explanation:** High risk detected. Specifically, the high Debt-to-Income ratio exceeds standard safety thresholds.")
+        # -----------------------------
+        
     else:
         st.success(f"### Decision: APPROVED (DTI: {dti:.2%})")
         st.info("The applicant meets the safe risk profile based on current bank policy.")
