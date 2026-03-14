@@ -2,7 +2,8 @@
 
 An end-to-end Credit Risk assessment system that combines a **Random Forest Classifier** for risk prediction with **Retrieval-Augmented Generation (RAG)** to provide transparent, policy-backed explanations for loan decisions.
 
-
+## 🚀 Live Demo
+> https://credit-risk-rag.streamlit.app
 
 ## 🌟 Overview
 Most credit scoring models are "black boxes"—they give a decision but don't explain why. This project solves that by cross-referencing model predictions against a **Vector Database** containing internal bank credit policies.
