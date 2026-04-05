@@ -42,20 +42,18 @@ Most credit scoring models are "black boxes"—they give a decision but don't ex
    git clone [https://github.com/your-username/credit-risk-rag.git](https://github.com/your-username/credit-risk-rag.git)
    cd credit-risk-rag
 
-#### Create & activate the virtual environment
+2. **Create & activate the virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-```
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-#### Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-#### Run the application
+4. **Run the application**
 
 ```bash
 streamlit run app.py
