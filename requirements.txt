@@ -1,14 +1,20 @@
-streamlit==1.26.0
-numpy==1.26.0
-pandas==2.1.1
-joblib==1.3.2
-scikit-learn==1.3.0
-langchain==0.1.0
+# Core
+streamlit
+pandas
+numpy
+joblib
+scikit-learn
+
+# LangChain & HuggingFace
+langchain
 langchain-community
 langchain-huggingface
-langchain-chroma
-sentence-transformers==2.2.2
-transformers==4.34.0
-chromadb==0.4.24
+sentence-transformers
+transformers
+
+# Vector DB
+chromadb
+pysqlite3-binary
+
+# Fix protobuf conflict
 protobuf==4.23.3
-pysqlite3-binary==0.4.1
