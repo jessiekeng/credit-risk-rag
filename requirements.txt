@@ -1,11 +1,11 @@
+# requirements.txt
+
 streamlit
-pandas
-joblib
-scikit-learn
-numpy
-langchain-huggingface
-langchain-community
-sentence-transformers
+langchain
 chromadb
-pysqlite3-binary
-onnxruntime
+sentence-transformers
+scikit-learn
+pandas
+numpy
+joblib
+protobuf==4.23.3
